@@ -34,6 +34,9 @@ app.use("/api/bookings", bookingRoutes);
 app.get("/", (req, res) => {
   res.send("BookIT API Running 🚀");
 });
+app.get("/ping", (req, res) => {
+  res.send("Server is awake 🚀");
+});
 
 // Port
 const PORT = process.env.PORT || 5000;
